@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" href="img/safelink.jpg"/>
+    <!-- Google fonts-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="styles.css">
+     <title>Safelink Q.A. Notes</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="javascript:window.location.reload(true)">
+          <h4>Safelink Q.A. TAGS</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasExample">Web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="BO_Tags.html">Back Office Tags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Email_Support.html">Email Templates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Web Applications</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="list-group">
+        <form action="https://www.dayforcehcm.com/mydayforce/login.aspx" method="get" target="_blank">
+          <button type="submit" class="list-group-item list-group-item-action"><img src="img/DFLogo.svg" alt="" width="30" height="24"> Ceridian Day Force</button>
+        </form>
+        <form action="https://app.clockify.me/en/login" method="get" target="_blank">
+          <button type="submit" class="list-group-item list-group-item-action"><img src="img/clockify.svg" alt="" width="30" height="24"> Clockify</button>
+        </form>
+        <form action="https://outlook.live.com/owa/" method="get" target="_blank">
+          <button type="submit" class="list-group-item list-group-item-action"><img src="img/outlook-icon.jpg" alt="" width="30" height="24"> Outlook</button>
+        </form>
+        <form action="https://safelinksupport.vmbc.com/hc/en-us" method="get" target="_blank">
+          <button type="submit" class="list-group-item list-group-item-action"><img src="img/safelink.jpg" alt="" width="30" height="24"> Safelink Support IKB</button>
+        </form>
+        <form action="https://vault.vmbc.com/#/login" method="get" target="_blank">
+          <button type="submit" class="list-group-item list-group-item-action"><img src="img/imgvault.png" alt="" width="30" height="24"> Vault</button>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-4 d-none d-md-block">
+          <nav id="templates" class="h-100 position-fixed bg-body-tertiary rounded">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#TZ-15">Time Zones</a>
+              <a class="nav-link" href="#FTR-1">First Time Response</a>
+              <a class="nav-link" href="#WR-2">Waiting Responses</a>
+              <a class="nav-link" href="#ER-17">Educating Responses</a>
+              <a class="nav-link" href="#BGC-18">Failed BGC</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#FTR-1-1">Activation</a>
+                <a class="nav-link ms-3 my-1" href="#FTR-1-2">Concern & Screenshot</a>
+                <a class="nav-link ms-3 my-1" href="#FTR-1-3">Screenshot</a>
+              </nav>
+              <!--/ nav FTR-->
+              <a class="nav-link" href="#FR-2">Follow-up Response Idea</a>
+              <a class="nav-link" href="#ER-3">Escalation Response Ideas</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#ER-3-1">Escalated</a>
+                <a class="nav-link ms-3 my-1" href="#ER-3-2">Escalated no response</a>
+              </nav>
+              <!--/ nav ER-->
+              <a class="nav-link" href="#PQ-4-1">Probing Question Ideas</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#PQ-4-1">24 Hours Error</a>
+                <a class="nav-link ms-3 my-1" href="#PQ-4-2">Invalid Format Error</a>
+                <a class="nav-link ms-3 my-1" href="#PQ-4-3">Probing Unkown issue</a>
+                <a class="nav-link ms-3 my-1" href="#PQ-4-4">An error has occured</a>
+                <a class="nav-link ms-3 my-1" href="#PQ-4-5">Captcha Validation Error</a>
+                <a class="nav-link ms-3 my-1" href="#PQ-4-6">Code: E-TIMEOUT</a>
+              </nav>
+              <!--/ nav PQ-->
+              <a class="nav-link" href="#BI-5">Badge Inquiry</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#BI-5-1">Badge Uploaded</a>
+                <a class="nav-link ms-3 my-1" href="#BI-5-2">Badge Required</a>
+                <a class="nav-link ms-3 my-1" href="#BI-5-3">Badge Rejected</a>
+              </nav>
+              <!--/ nav BI-->
+              <a class="nav-link" href="#CI-6">CALAD Issue response</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#CI-6-1">ER requesting timeframe</a>
+                <a class="nav-link ms-3 my-1" href="#CI-6-2">With Enrollment ID</a>
+              </nav>
+              <!--/ nav CI-->
+              <a class="nav-link" href="#TI-0">Token Invalid</a>
+              <a class="nav-link" href="#LZC-7">Locked Zip Code<a>
+              <a class="nav-link" href="#IO-8">Invited Onboarding</a>
+              <a class="nav-link" href="#RP-9">Retraining Program</a>
+              <a class="nav-link" href="#GEO-10">Geolocation</a>
+              <a class="nav-link" href="#PE-11">Profile Edition</a>
+              <a class="nav-link" href="#SB-12">Select a Brand</a>
+              <a class="nav-link" href="#VL-13">Valid Location</a>
+              <a class="nav-link" href="#File-14">File directory not found</a>
+              <a class="nav-link" href="#RQ-15">Reinstall Quest</a>
+              <a class="nav-link" href="#EN-16">Enrollment Related Ideas</a>
+            </nav>
+            <!--/ nav nav-pills-->
+          </nav>
+          <!--/templates-->
+        </div>
+        <!--/ col-4 -->
+        <div class="col">
+          <div data-bs-spy="scroll" data-bs-target="#templates" data-bs-smooth-scroll="true" class="scrollspy-example-2 ms-2 st" tabindex="0">
+            <div id="TZ-15" class="container-fluid">
+              <div class="row">
+                <div class="col p-3 mb-5 text-dark border-start">
+                  <span class="fs-4">Helpscout</span>
+                  <small class="align-baseline"><div class="vr me-2"></div>EST</small>
+                  <hr class="m-0" /> 
+                  <div class="p-3 mt-4">
+                  <span class="fs-6"id="est-date"></span>
+                  <br>
+                  <span class="fs-3 fw-semibold" id="est-time"></span>
+                  </div>
+                </div>
+                <div class="col p-3 mb-5 text-dark ms-2  border-start">
+                  <span class="fs-4" >Vault</span>
+                  <small class="align-baseline"><div class="vr me-2"></div>PST</small>
+                  <hr class="m-0" /> 
+                  <div class="p-3 mt-4">
+                    <span class="fs-6"id="pst-date"></span>
+                    <br>
+                    <span class="fs-3 fw-semibold" id="pst-time"></span>
+                  </div>
+                </div>
+                <div class="col p-3 mb-5 text-dark ms-2  border-start">
+                  <span class="fs-4">Philippines</span>
+                  <small class="align-baseline"><div class="vr me-2"></div>Asia/Manila</small>
+                  <hr class="m-0" /> 
+                  <div class="p-3 mt-4">
+                  <span class="fs-6"id="asia_date"></span>
+                  <br>
+                  <span class="fs-3 fw-semibold" id="ph_time"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/TZ-15-->
+            <div id="FTR-1" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">First Time Response</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Thank you for contacting Quest Support.</p>
+                  <br>
+                  <p>Let me check and get back to you shortly.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ FTR-1-->
+            <div id="WR-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Waiting Response</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>++ Please give us more time to review your concern. We'll get back to you.</p>
+                  <br>
+                  <p>++ We have yet to finish reviewing your concern. Please give us more time.</p>
+                  <br>
+                  <p>Thank you,</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ WR-2-->
+            <div id="ER-17" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Educating Responses</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>++ In addition, regarding password resets, this is being handled personally since Support Agents do not have access to your credentials.</p>
+                  <br>
+                  <p>++ In addition, please note that the Support Team is not in charge of processing these documents; this is handled by a dedicated team that reviews each document required to verify the information needed.</p>
+                  <br>
+                  <p>++ In addition, please note that the Support team doesn't process proof validation, and there's no specific time frame for it.</p>
+                  <br>
+                  <p>++ In addition, please note that the Support Team does not process documentation, as this is completed by a different team. Thank you for your patience on this matter.</p>
+                  <br>
+                  <p>++ In addition, please note that the Quest App doesn't work on mobile phones; it is best compatible with iPads and tablets.</p>
+                  <br>
+                  <p>++ In addition, please note that the Support Team does not process badge validation, as this is handled by a different team. Thank you for your patience on this matter.</p>
+                  <br>
+                  <p>++ In addition, if you're referring to your payment and compensation. You can contact your Team Manager/Agency directly regarding this matter.</p>
+                  <br>
+                  <p>++We can confirm that, as of now, there are no issues, only delays caused due to the volume received by Backoffice.</p>
+                  <p>Since the BO Team manually reviews each document. But rest assured that they are doing their best to do it as fast as they can. Thank you for your patience on this matter.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ ER-17 -->
+             <div id="BGC-18" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Failed BGC Authorization and Disclosure</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, the account status is Failed BGC Authorization and Disclosure. Please refer to your Agency regarding this matter.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!-- / BGC -->
+            <div id="FTR-1-1" class="p-3 mb-5">
+              <div class="row">
+                <div class="col">
+                  <span class="fs-5 fw-semibold mt-2">Activation</span>
+                </div>
+                <div class="col input-group mb-3 mt-1 z-0">
+                  <input type="text" id="CN" class="form-control border-top-0 border-start-0" placeholder="Recipient's username" aria-label="Recipient's username" value="tf-fieldactissues@verizon.com" aria-describedby="button-addon2" readonly>
+                  <button class="btn btn-outline-dark" type="button" onclick="QAcopy();" id="button-addon2">Copy</button>
+                </div>
+              </div>
+               <!--/End of Row-->
+               <div class="border-start border-dark-subtle mt-2">
+                <div class="form-controla p-3 text" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Thank you for contacting Quest Support.</p>
+                  <br>
+                  <p>I'm adding the Safelink Activations Team to help you with your concern. In the meantime, please provide the following:</p>
+                  <br>
+                  <p>Enrollment number:</p>
+                  <br>
+                  <p>ESN/IMEI: </p>
+                  <br>
+                  <p>ICCID: </p>
+                  <br>
+                  <p>Zip Code: </p>
+                  <br>
+                  <p>Brief description of the issue: </p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/FTR-1-1-->
+            <div id="FTR-1-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Concern and screenshot</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Thank you for contacting Quest Support.</p>
+                  <br>
+                  <p>Please tell me more about your concern and provide a screenshot of the issue so we can assist you further.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ FTR-1-2-->
+            <div id="FTR-1-3" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Screenshot</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Thank you for contacting Quest Support.</p>
+                  <br>
+                  <p>Please provide a screenshot of the error so we can check further.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ FTR-1-3-->
+            <div id="FR-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Follow-up</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Thank you for contacting Quest Support.</p>
+                  <br>
+                  <p>Just to follow up, please confirm if you are still experiencing the same issue.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ FR-2-->
+            <div id="ER-3" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Escalate</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>We will escalate your concern to the proper department. As soon as we receive feedback from them, we'll let you know.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ ER-3-->
+            <div id="ER-3-1" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Escalated</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>We have already escalated your concern to the proper department. As soon as we receive an update from them, we'll let you know.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ ER-3-1-->
+            <div id="ER-3-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Escalated no Response</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>As of the moment, we have not received a response from the proper department yet. However, rest assured that this has already been escalated to them. We will get back to you once we have an update.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ ER-3-2-->
+            <div id="PQ-4-1" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">24 Hours Error (Message)</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>In order to provide you with a detailed response to your concern, please provide the customer's address and zip code able to us to check the information.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#24_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="24_modal" tabindex="-1" aria-labelledby="24_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="24_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/24_hour_error.jpg" class="object-fit-fill border rounded ratio ratio-1x1" alt="24 hour error">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-1-->
+            <div id="PQ-4-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Invalid Format Error (Address Information Page)</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Can you try to create a new application without including anything in the middle name field in the applicant's information?</p>
+                  <br>
+                  <p><strong>If the issue still persists</strong> - Please provide a screenshot showing the full name in the Applicant’s information step in the Quest App. Thank you!</p>
+                  <br>
+                  <p><strong>Scenario -</strong> As per the dedicated team, kindly try to enter the name without an apostrophe. </p>
+                  <br>
+                  <p>Let us know if this will go through.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#Invalid_F_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="Invalid_F_modal" tabindex="-1" aria-labelledby="Invalid_F_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Invalid_F_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/Invalid_format.png" class="object-fit-fill border rounded ratio ratio-1x1" alt="INVALID_FORMAT_PROVIDED">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-2-->
+            <div id="PQ-4-3" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Unknown Issue (Object object, Unknown, E-Timeout, Oops, IDBDatabase)</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>++ Can you confirm the page prior to this error? Also, is this happening to all applications? Does the issue persist while using other devices?</p>
+                    <br>
+                  <p>++ Please confirm if you have tried to run the Quest App on other compatible devices. Also, is this happening consistently to all applications or just one?</p>
+                  <br>
+                  <p>++ Please try to run the Quest App on other compatible devices. Also, is this happening to all applications?</p>
+                  <br>
+                  <p>++ Please provide a screenshot of the error for further checking.</p>
+                  <br>
+                  <p>++ What action or step when getting this error message?</p>
+                  <br>
+                  <p>++ Kindly try to uninstall and reinstall the Quest Application.</p>
+                  <br>
+                  <p>Let us know if it works.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#UI_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="UI_modal" tabindex="-1" aria-labelledby="UI_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="UI_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://secure.helpscout.net/conversation/2771483916/170350?viewId=8432482" target="_blank"><img src="Screenshots/team_disabled.png" class="object-fit-fill border rounded ratio ratio-1x1 img-hover" alt="..."></a>
+                    <a href="https://secure.helpscout.net/conversation/2771482744/170349?viewId=8432482" target="_blank"><img src="Screenshots/connection_closing.png" class="object-fit-fill border rounded ratio ratio-1x1 mt-3 img-hover" alt="..."></a> 
+                    <a href="https://secure.helpscout.net/conversation/2773682335/170399?viewId=8432482" target="_blank"><img src="Screenshots/Oops_error.png" class="object-fit-fill border rounded ratio ratio-1x1 mt-3 img-hover" alt="..."></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-3-->           
+            <div id="PQ-4-4" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">An error has occurred (E-sign page)</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Just to confirm, have you tried using other devices? Also, is this issue happening with all applications?</p>
+                  <br>
+                  <p>++ Kindly try to uninstall and reinstall the Quest Application.</p>
+                  <br>
+                  <p>++ Also, please note that it is important to keep a strong mobile connection, or even better, a good wireless connection, when creating applications. Kindly check the connectivity by trying to access other pages. In case you are in an enclosed location, please try to go to an open place and see if the connection improves.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#PQ_modal"> See Images</a></p>
+              </div>
+            </div>
+             <!-- Modal -->
+             <div class="modal fade" id="PQ_modal" tabindex="-1" aria-labelledby="PQ_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PQ_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://secure.helpscout.net/conversation/2795728135/171078?viewId=8432482" target="_blank"><img src="Screenshots/tap_to_sign.png" class="object-fit-fill border rounded ratio ratio-1x1 img-hover" alt="..."></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-4-->
+            <div id="PQ-4-5" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Captcha Validation Error</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Regarding your concern about the captcha error, before trying to log in, are you able to check the "I'm not a robot" box and complete the captcha validation?</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-5-->
+            <div id="PQ-4-6" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Code: E-TIMEOUT (With known issue)</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Just want to confirm, is this happening while you are running the Quest Application with other compatible devices? And is this happening to all enrollments?</p>
+                  <br>
+                  <p><strong>With known issue</strong> - Just an update, we have been informed that there's a known issue in CALAD and SPIA. It is already being reviewed by the dedicated team and we will provide you an update as soon as we receive feedback.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ PQ-4-6-->
+            <div id="BI-5" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Badge Approved</span>
+              <div class="border-start border-dark-subtle mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, your badge picture has been approved. Kindly refresh the application for the latest status.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ BI-5-->
+            <div id="BI-5-1" class="p-3 mb-5">
+              <span class="fs5 fw-semibold mt-2">Badge Uploaded</span>
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, your badge photo was uploaded. Please wait for the dedicated team to process and validate your badge.</p>
+                  <br>
+                  <p>Thank you for your patience and understanding on this matter.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ BI-5-1-->
+            <div id="BI-5-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Badge required</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, the Badge Photo was still required on our end. For badge validation, please note that you need to take a clear picture of yourself holding your badge, ensuring that both your face and the badge are visible.</p>
+                  <br>
+                  <p>If your badge has already been submitted, please give the dedicated team the time to process and validate it.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ BI-5-2-->
+            <div id="BI-5-3" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Badge rejected</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, the badge validation was rejected. Please retake the photo and make sure that you are holding the badge ID.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ BI-5-3-->
+            <div id="CI-6" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">CALAD: Issue (With known issue)</span>
+              <figcaption class="footer">
+                <small>- Remember: 
+                  <cite title="Source Title">
+                    Coordinate with your TM or Client before using this template to confirm the issue.
+                  </cite>
+                </small>
+              </figcaption>
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Please be informed that there's an intermittent issue with the California Lifeline Administrator (CALAD) and the dedicated team is currently looking and monitoring the situation.</p>
+                  <br>
+                  <p>We will provide you with an update as soon as we receive feedback from the dedicated team.</p>
+                  <br>
+                  <p>Thank you for your patience in this matter.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ CI-6-->
+            <div id="CI-6-1" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">CALAD: ER requesting timeframe</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Please be informed that there's still an intermittent issue with California Lifeline Administrator (CALAD).</p>
+                  <br>
+                  <p> Also, we have not received the estimated time for the system to be back to normal. We will provide you with an update as soon as we receive feedback.</p>
+                  <br>
+                  <p>Thank you for your patience in this matter.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ CI-6-1-->
+            <div id="CI-6-2" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">CALAD: With Enrollment id</span>
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Upon checking, CALAD has not finished the approval process yet. This is the last step of the customer’s validation process and CALAD doesn't have a specific time frame for it.</p>
+                  <br>
+                  <p>In addition, please be informed that there's still an intermittent issue with the California Lifeline Administrator (CALAD), and the dedicated team is currently looking and monitoring the situation.</p>
+                  <br>
+                  <p>Thank you for your patience in this matter.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ CI-6-2-->
+            <div id="TI-0" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Token is Invalid</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>To complete the reset password process, click on the link “Reset Password” on the Quest login app (<a href="https://tracfone.quest.emerios.com/">https://tracfone.quest.emerios.com</a>).</p>
+                  <br>
+                  <p>Please make sure that the link has not expired and ensure that you are using the latest link to proceed.</p>
+                  <br>
+                  <p>Also, kindly ensure that the password you choose is not an old one or the same as the previous password. The following rules must be followed during password reset:</p>
+                  <br>
+                  <li>Be different than the last 6 passwords</li>
+                  <li>Be at least 10 characters long</li>
+                  <li>Contain a lower-case letter</li>
+                  <li>Contain a capital letter</li>
+                  <li>Contain a number</li>
+                  <li>Contain a special character</li>
+                  <li>Username cannot be part of the password</li>
+                  <br>
+                  <p>Upon confirmation of a successful password reset, close your browser and go back to the Quest App. Once in there, enter your username and new password to log in.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#TII_modal">See Images</a>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="TII_modal" tabindex="-1" aria-labelledby="TII_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="TII_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://secure.helpscout.net/conversation/2764672638/170126?viewId=8432482" target="_blank"><img src="Screenshots/Token_invalid.png" class="object-fit-fill border rounded ratio ratio-1x1 img-hover mt-3" alt="..."></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/TI-0-->
+            <div id="LZC-7" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Locked Zip Code (CA)</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>This is the error message you get when you are trying to log in to a locked zip code. Kindly refer to your agency for the needed help. Thank you!</p>
+                  <br>
+                  <p><strong>More details for ER</strong> - Please be informed that there have been updates regarding the zip codes in which agents are allowed to work. Kindly coordinate with your agency for further information.</p>
+                  <br>
+                  <p>Thank you for your patience in this matter.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#LZC_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+             <div class="modal fade" id="LZC_modal" tabindex="-1" aria-labelledby="LZC_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LZC_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/Locked_zip_code.png" class="object-fit-fill border rounded ratio ratio-1x1" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ LZ-7-->
+            <div id="IO-8" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Invited Onboarding (Invitation Error ONB0005)</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Please reach out to your Team Manager or Agency regarding this matter so they can <em>resend/decline</em> the invite and send you a new one.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ IO-8-->
+            <div id="RP-9" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Retraining Program (Field Agent/ Team Manager)</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>This has something to do with the retraining program. Kindly coordinate with your Agency for further information.</p>
+                  <br>
+                  <p><strong>Agency Manager</strong> - Refer it to Elearning (elearning@emerios.com)</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#retraining_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="retraining_modal" tabindex="-1" aria-labelledby="retraining_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="retraining_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/retraining_1.png" class="object-fit-fill border rounded ratio ratio-1x1" alt="...">
+                    <img src="Screenshots/retraining_2.png" class="object-fit-fill border rounded ratio ratio-1x1 mt-3" alt="...">
+                    <img id="myImg" src="Screenshots/retraining_3.png" class="object-fit-fill border rounded ratio ratio-1x1 mt-3" alt="Retraining Process" onclick="viewImage();">
+                    <div id="view_modal" class="second-modal">
+                      <span class="close" onclick="closeImage();">&times;</span>
+                      <img class="second-modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ RP-9-->
+            <div id="GEO-10" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Geolocation</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Please uninstall and reinstall the new Quest app once done, make sure to allow all permissions.</p>
+                  <br>
+                  <p><strong>Old Quest</strong> - For reference, here is the link to download the Quest application: <a href="https://tracfone.quest.emerios.com/">https://tracfone.quest.emerios.com</a></p>
+                  <br>
+                  <p>Let me know if it works.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#geo_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="geo_modal" tabindex="-1" aria-labelledby="geo_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="geo_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                   <a href="https://secure.helpscout.net/conversation/2774766991/170461?viewId=8494616" target="_blank"> <img src="Screenshots/Geolocation_error.png" class="object-fit-fill border rounded ratio ratio-1x1 img-hover" alt="..."></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ GEO-10-->
+            <div id="PE-11" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Profile Edition</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>In order to proceed with the profile edition on the Agent's profile, could you please provide the username and email address associated with your Vault account?</p>
+                  <br>
+                  <p><strong>Case to case</strong><i> - needs a probing question if the information was incomplete.</i> ex.#<a href="https://secure.helpscout.net/conversation/2833136308/172482?viewId=8432480" contenteditable="false" target="_blank">172482</a></p>
+                  <ul>
+                    <li>Your First and Lastname:</li>
+                    <li>Username:</li>
+                    <li>Email Address:</li>
+                  </ul>
+                  <br>
+                  <p>Thank you,</p>
+                  <br>
+                  <br>
+                  <p><strong>After edition</strong> - The ________________ has been updated as per your request.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ PE-11-->
+            <div id="SB-12" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Select a Brand</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>As per the dedicated team, please try to log out and log back in again.</p>
+                  <br>
+                  <p>Let us know if it works.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                  <br>
+                  <br>
+                  <fieldset class="bg-body-tertiary p-3 rounded-2 shadow-sm">
+                  <p>Good day Team,</p>
+                  <br>
+                  <p>Kindly assist us with this ticket __________. The ER is encountering an issue on the  "SELECT A BRAND" page.</p>
+                  <p>Thank you in advance.</p>
+                  <br>
+                  <p>ER Username:______________</p>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <!--/ SB-12-->
+            <div id="VL-13" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Valid location to continue (Error)</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Based on the screenshot provided, you will not be able to log in as you are outside the orders creation area, or you are not connected to your designated IPs. If the error persists please reach out to your Team Manager/Agency.</p>
+                  <br>
+                  <p>Please do not hesitate to reach out if you have any other concerns.</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#VL_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="VL_modal" tabindex="-1" aria-labelledby="VL_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="VL_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://secure.helpscout.net/conversation/2763180216/170036?viewId=8432482" target="_blank"><img src="Screenshots/Valid_location.png" class="object-fit-fill border rounded ratio ratio-1x1 img-hover" alt="..."></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ VL-13-->
+            <div id="File-14" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">File directory not found (Downloading Issue)</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>Please make sure you are logging in to the new Quest application. For reference, here is the link to download the New Quest application:</p>
+                  <br>
+                  <p><a href="https://tracfone.quest.emerios.com/"> https://tracfone.quest.emerios.com</a></p>
+                  <br>
+                  <p>Please let me know if it works. Thank you!</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#FD_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="FD_modal" tabindex="-1" aria-labelledby="FD_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="FD_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/file_directory_error.png" class="object-fit-fill border rounded ratio ratio-1x1" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ File-14-->
+            <div id="RQ-15" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Reinstall Quest Application</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>This is the message you see when the Quest App needs reinstalling.</p>
+                  <br>
+                  <p>For reference, here is the link to download the Quest application:</p>
+                  <p><a href="https://tracfone.quest.emerios.com/"> https://tracfone.quest.emerios.com</a></p>
+                  <br>
+                  <p>Please let me know if it works. Thank you!</p>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+                <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover d-flex justify-content-end mt-3" data-bs-toggle="modal" data-bs-target="#reinstall_modal"> See Images</a></p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="reinstall_modal" tabindex="-1" aria-labelledby="reinstall_modallabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="reinstall_modallabel">Screenshot Reference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Screenshots/install_quest.png" class="object-fit-fill border rounded ratio ratio-1x1" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ RQ-15-->
+            <div id="EN-16" class="p-3 mb-5">
+              <span class="fs-5 fw-semibold mt-2">Enrollment</span> 
+              <div class="border-start border-dark-suble mt-4">
+                <div class="form-controla p-3" contenteditable="true">
+                  <p>Hi there,</p>
+                  <br>
+                  <br>
+                  <p>++ Please submit other valid and unexpired proofs that will match 100% with what was entered on the application.</p>
+                  <p>++ Upon checking, the _____________ proof was rejected because the submitted proof has no back part of the card and purchase receipt. Please submit proof with both sides of the card together with the purchase receipt in no more than 7 days.</p>
+                  <p>++ Upon checking, the _____________ proof was rejected because it was blurry. Please submit a clear and readable one.</p>
+                  <p>++ Upon checking, the _____________ proof was rejected because it was blurry. Please submit a clear and legible copy of the proof one more time. </p>
+                  <br>
+                  <p><strong>Mismatched information (Proof vs. Application)</strong></p>
+                  <i><strong>Case to case</strong> -  You may create a new enrollment for the applicant that matches 100% with what was entered on the application. </i> ex. #<a href="https://secure.helpscout.net/conversation/2832769942/172458?viewId=8432482" contenteditable="false" target="_blank">172458</a>
+                  <br>
+                  <br>
+                  <p>++ Upon checking, the _____________ proof was rejected because the <em>last name/first name/address/four-digit SSN</em> does not match (__________ proof vs. __________ on application).</p>
+                  <p>++ Upon checking, the _____________ proof was rejected because the <em>Lastname/Firstname</em> were interchanged (__________ proof vs. __________ on application).</p>
+                  <br>
+                  <p><strong>Valid Proofs</strong></p>
+                  <p>++ Please submit any of the following documents as proof. </p>
+                  <p>++ For reference here is the list of acceptable documents for _____________.</p>
+                  <a href="https://safelink-internal-knowledge-base.helpscoutdocs.com/article/798-proofs" target="_blank" style="cursor: pointer;" contenteditable="false">Internal Knowledge Base(IBK) - Valid Proofs</a>
+                  <br>
+                  <br>
+                  <br>
+                  <p>Best regards,</p>
+                </div>
+              </div>
+            </div>
+            <!--/ EN-16-->
+          </div>
+          <!--/ #templates-->
+        </div>
+        <!--/Col-8-->
+        <nav class="navbar sticky-bottom bot bg-dark">  
+          <div class="col-4 h3 ms-4 typewriter">
+            <span style="color: #9c9c9c;">Safelink</span> <span id="typed"></span><span class="cursor">&nbsp;</span>
+          </div>
+        </nav>
+      </div>
+      <!-- End of Row-->
+      <div class="container">
+        <div class="chatbot-popup">
+          <div class="chat-header overflow-hidden">
+            <div class="header-info row gx-5">
+              <div class="col justify-content-start d-flex"> 
+                <i class="bi bi-robot fs-2 rob-logo"></i>
+                <h2 class="logo-text m-2">Chatbot</h2>
+              </div>
+              <div class="col justify-content-end">
+                <button id="close-chatbot" type="button" class="btn float-end"><i class="bi bi-chevron-down fs-5"></i></button>
+              </div>
+            </div>
+          </div>
+          <!--/Chat Header-->
+          <div class="chatbot-body">
+            <div class="message bot-message">
+              <i class="bi bi-robot fs-3 rob-avatar"></i>
+              <div class="message-text">
+                Hello! 😉 <br /> How can I help you?
+                <br/>
+                <br/>
+                To see Ms. Josephine Q.A. updates just click this <a class="bi bi-bookmark-star-fill" href="https://glowtouchtechnologies779-my.sharepoint.com/:w:/r/personal/josephine_panizares_unifycx_com/_layouts/15/doc2.aspx?sourcedoc=%7B31DF41BC-41A7-4811-88D3-01AAF7A6C869%7D&file=Common%20Error.docx&action=default&mobileredirect=true&DefaultItemOpen=1&ct=1745940774995&wdOrigin=TEAMS-WEB.p2p_ns.rwc&cid=58696817-cf49-46eb-9c85-7d807e757033&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=aa60832e-b859-453e-9182-c66c78c738cf&wdExp=TEAMS-TREATMENT&wdhostclicktime=1748561175560&web=1" target="_blank">Q.A. Updates</a>
+              </div>
+            </div>
+          </div>
+          <!--/Chat Body-->
+          <div class="chat-footer">
+            <form action="#" class="chat-form">
+              <textarea placeholder="Message..." class="message-input" required></textarea>
+              <div class="chat-controls">
+                <button type="button"><i class="bi bi-emoji-smile" id="emoji-picker"></i></button>
+                <div class="file-upload-wrapper">
+                  <input type="file" accept="image/*" id="file-input" hidden >
+                  <img src="#">
+                  <button type="button" id="file-upload"><i class="bi bi-paperclip"></i></button>
+                  <button type="button" id="cancel-upload"><i class="bi bi-x"></i></button>
+                </div>
+                <button type="submit" id="send-message"><i class="bi bi-arrow-up"></i></button>
+              </div>
+            </form>
+          </div>
+          <!--/Chat Footer-->
+        </div>
+        <!--/Chat Bot-->
+      </div>
+      <!--/Container Fluid-->
+      <button id="chatbot-toggler">
+        <span><i class="bi bi-chat-right-fill fs-4"></i></span>
+        <span><i class="bi bi-x-lg fs-4"></i></span>
+      </button>
+      <button type="button" class="btn btn-dark" id="btn-back-to-top"> <i class="bi bi-chevron-up fs-5" onclick="backToTop();"></i></button>
+    </div>
+    <!-- /container fluid -->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+         <!-- Emoji picker link-->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
