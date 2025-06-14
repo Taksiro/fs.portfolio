@@ -32,7 +32,7 @@ const generateBotresponse = async (incomingBotmessagediv) => {
    const data = await response.json();
    if(!response.ok)throw new Error(data.error.message);
 
-   const apiResponsetext = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "**$1**").trim().replace(/\* /g, '\n- ').trim().replace(/\*/g, '"').trim().replace(/\s{2,}/g, " ").trim().replace(/\./g, '.\n\n').trim();
+   const apiResponsetext = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "**$1**").replace(/\* /g, '\n ').replace(/\*/g, ' ').replace(/\s{2,}/g, " ").replace(/\./g, '.\r\n').trim();
    messageElement.innerHTML = apiResponsetext;
   } catch (error) {
     console.log(error);
