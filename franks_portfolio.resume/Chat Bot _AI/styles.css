@@ -30,16 +30,15 @@
 
 #message-inputs:focus{
   box-shadow: rgba(189, 189, 189, 0.2) 0px 2px 4px, rgba(196, 196, 196, 0.1) 0px 1px 3px;
-  color: #000000;
+  color: var(--color-black);
 }
 #message-inputs:hover{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 1px 3px;
-  color: #202020;
 }
 
 
 .text-muted{
-  color: #000000;
+  color: var(--color-black);
 }
 
 
@@ -153,22 +152,22 @@ body {
 
 #chatbot-bodys .bot-messages .think .message-texts{
   padding: 2px 16px;
-  background: #f3f3f3;
-  color: #202020; 
+  background: var(--color-bg);
+  color: var(--color-dark);
 }
 
 #chatbot-bodys .bot-messages .message-texts{
-  color: #202020;
+  color: var(--color-dark);
   border-radius: 13px 13px 13px 3px;
-  background: #020202;
-  box-shadow: 0 0 0 1px #ececec, 0 0 0 2px #000000;
+  background: var(--color-black);
+  box-shadow: 0 0 0 1px #ececec, 0 0 0 2px var(--color-black);
 }
 
 #chatbot-bodys .user-messages .message-texts{
-  color: #202020;
+  color: var(--color-dark);
   border-radius: 13px 13px 3px 13px;
-  background: #f3f3f3;
-  box-shadow: 0 0 0 1px #ececec, 0 0 0 2px #000000;
+  background: var(--color-bg);
+  box-shadow: 0 0 0 1px #ececec, 0 0 0 2px var(--color-black);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 0.95rem;
