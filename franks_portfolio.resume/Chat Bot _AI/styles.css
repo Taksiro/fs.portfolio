@@ -153,6 +153,7 @@ body {
   color: #202020;
   border-radius: 13px 13px 13px 3px;
   background: #020202;
+    box-shadow: 0 0 0 1px #ececec, 0 0 0 2px #000000;
 
 }
 
