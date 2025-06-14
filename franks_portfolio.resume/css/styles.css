@@ -10901,6 +10901,19 @@ p.lead {
     box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 200), 0 6px 20px 0 rgba(230, 230, 230, 200);
   }
 }
+
+#img-blackdot{
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 200), 0 6px 20px 0 rgba(230, 230, 230, 200);
+  }
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
