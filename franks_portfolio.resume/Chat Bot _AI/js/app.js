@@ -32,7 +32,7 @@ const generateBotresponse = async (incomingBotmessagediv) => {
    const data = await response.json();
    if(!response.ok)throw new Error(data.error.message);
 
-   const apiResponsetext = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "**$1**").trim().replace(/\s{2,}/g, " ");
+   const apiResponsetext = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "**$1**").trim().replace(/\* /g, '\n- ').trim().replace(/\*/g, '"').trim().replace(/\s{2,}/g, " ").trim().replace(/\./g, '.\n\n').trim();
    messageElement.innerHTML = apiResponsetext;
   } catch (error) {
     console.log(error);
@@ -69,7 +69,7 @@ const handleOutgoingMessage = (e) => {
 
   setTimeout(()=>{
     const messageContent = `
-    <i class="bi bi-robot fs-3 rob-avatar"></i>
+    <i class="rob-avatar"></i>
     <div class="message-texts">
      <div class="think-indicator">
       <div class="dot"></div>
@@ -92,14 +92,14 @@ const handleOutgoingMessage = (e) => {
 
 messageInputs.addEventListener("keydown",(e)=>{
   const userMessages = e.target.value.trim();
-  if(e.key === "Enter" && userMessages && !e.shiftKey && window.innerWidth > 768){
+  if(e.key === "Enter" && userMessages && !e.shiftKey && window.innerWidth > 1){
     handleOutgoingMessage(e);
   }
 });
+
 
 messageInputs.addEventListener("input", () => {
 messageInputs.style.height = `${initialHeights}px`;
 messageInputs.style.height = `${messageInputs.scrollHeight}px`;
 document.querySelector(".chat-forms").style.borderRadius = messageInputs.scrollHeight > initialHeights ? "15px" : "32px";
 });
-
