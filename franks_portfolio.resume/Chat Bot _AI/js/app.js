@@ -5,7 +5,7 @@ messageInputs.style.borderRadius = "40px 40px 40px 40px";
 messageInputs.style.maxHeight = "180px";
 
 
-const API_KEY = "AIzaSyC2hENtMt7gLQLU38m5x5lx9E05__H1qH4";
+const API_KEY = "";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 const userData = {
   message: null,
@@ -103,3 +103,4 @@ messageInputs.style.height = `${initialHeights}px`;
 messageInputs.style.height = `${messageInputs.scrollHeight}px`;
 document.querySelector(".chat-forms").style.borderRadius = messageInputs.scrollHeight > initialHeights ? "15px" : "32px";
 });
+
