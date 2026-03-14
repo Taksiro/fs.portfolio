@@ -1,0 +1,175 @@
+:root{
+--primary:#ff6a2f;
+--primary-dark:#ff4a05;
+--bg:#f8fafc;
+--card:#ffffff;
+--text:#1f2937;
+--muted:#6b7280;
+--border:#e5e7eb;
+}
+
+/* GLOBAL */
+
+body{
+background:var(--bg);
+font-family:"Inter",system-ui,Segoe UI,sans-serif;
+color:var(--text);
+transition:all .3s ease;
+}
+
+/* TOP NAVBAR */
+
+.sb-topnav{
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+border-bottom:1px solid var(--border);
+}
+
+.navbar-brand{
+font-weight:600;
+letter-spacing:.3px;
+}
+
+/* SIDEBAR */
+
+.sb-sidenav{
+background:#ffffff;
+border-right:1px solid var(--border);
+transition:all .3s ease;
+}
+
+.sb-sidenav .nav-link{
+border-radius:8px;
+margin:4px 10px;
+transition:all .25s ease;
+}
+
+.sb-sidenav .nav-link:hover{
+background:rgba(255,106,47,.08);
+color:var(--primary);
+transform:translateX(3px);
+}
+
+.sb-sidenav .sb-sidenav-menu-heading{
+font-size:12px;
+text-transform:uppercase;
+color:var(--muted);
+}
+
+/* DASHBOARD HEADER */
+
+h1{
+font-weight:600;
+letter-spacing:.3px;
+}
+
+/* CARDS */
+
+.shadow{
+box-shadow:0 6px 18px rgba(0,0,0,0.05) !important;
+transition:all .3s ease;
+}
+
+.shadow:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* METRIC CARDS */
+
+.card-header{
+background:none;
+border:none;
+font-size:14px;
+color:var(--muted);
+}
+
+h2{
+font-weight:700;
+color:var(--primary);
+}
+
+/* DATE RANGE PICKER */
+
+#reportrange{
+background:#fff;
+border:1px solid var(--border);
+border-radius:8px;
+transition:all .25s ease;
+}
+
+#reportrange:hover{
+border-color:var(--primary);
+box-shadow:0 5px 15px rgba(0,0,0,0.06);
+}
+
+/* TABLE */
+
+#datatablesSimple{
+border-radius:10px;
+overflow:hidden;
+}
+
+.dataTable-table thead{
+background:#f1f5f9;
+}
+
+.dataTable-table tbody tr{
+transition:all .2s ease;
+}
+
+.dataTable-table tbody tr:hover{
+background:#fff7f3;
+transform:scale(1.01);
+}
+
+/* BUTTONS */
+
+.btn-primary{
+background:linear-gradient(135deg,#ff7a3c,#ff4a05);
+border:none;
+transition:all .3s ease;
+}
+
+.btn-primary:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(255,106,47,.35);
+}
+
+/* FOOTER */
+
+footer{
+border-top:1px solid var(--border);
+}
+
+/* SMOOTH PAGE TRANSITION */
+
+#layoutSidenav_content{
+animation:fadeSlide .4s ease;
+}
+
+@keyframes fadeSlide{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.dataTable-wrapper{
+border-radius:12px;
+overflow:hidden;
+}
+
+.dataTable-top{
+padding:15px;
+border-bottom:1px solid var(--border);
+}
+
+.dataTable-bottom{
+padding:15px;
+border-top:1px solid var(--border);
+}
+
